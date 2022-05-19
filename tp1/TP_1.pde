@@ -1,16 +1,17 @@
 int pantalla,Y,frames;
 PImage imagen1,imagen2,imagen3,imagen4,imagen5,LOOP;
 PFont fuente;
+float colour;
 
 
 void setup(){
  size(960,540);
  frames = 1;
  pantalla = 1;
+ colour = random (186 , 255);
  Y = 650;
  textSize(30);
  noFill();
- stroke(190,245,191);
  strokeWeight(4);
  imagen1 = loadImage ("TITULO.png");
  imagen2 = loadImage ("CREDITOS3.png");
@@ -28,6 +29,7 @@ void draw(){
   image(LOOP,0,0);
   dibujarFondo();
   noFill();
+  stroke(190,colour,191);
   image(imagen4,885,245,50,50);
   image(imagen5,25,245,50,50);
   ellipse(910,height/2,50,50);
@@ -125,7 +127,7 @@ void dibujarFondo() {
   if(frameCount%60 == 0){
    frames++;
   }
-  if (frames > 4500) {
+  if (frames > 1125) {
    frames = 1;
   }
   LOOP = loadImage ("Frames/Frame" + frames + ".jpg");
