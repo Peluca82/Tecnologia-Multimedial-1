@@ -192,8 +192,6 @@ void mousePressed() {
       juego = 3;
     }
   }
-  println(sector);
-  println(colordistant);
 }
 
 void keyPressed() {
