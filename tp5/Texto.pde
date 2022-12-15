@@ -74,15 +74,6 @@ class Texto {
     text("Presione la tecla de la opcion que quiera", 0, 485, 500, 500);
   }
   
-  void escena2_5() {
-    textFont(fuente2);
-    textSize(12);
-    fill(255, 255, 255);
-    text("Volvi al mismo pasillo de antes", 25, 380, 450, 500);
-    text("A. Izquierda      B. Derecha", 25, 455, 450, 500);
-    text("Presione la tecla de la opcion que quiera", 0, 485, 500, 500);
-  }
-  
   void escena3() {
     textFont(fuente2);
     textSize(12);
